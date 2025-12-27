@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Drag & Drop ToDo</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Drag & Drop ToDo</h1>
+
+  <form id="taskForm" class="task-form">
+    <input id="taskInput" placeholder="Add a new task..." required />
+    <button>Add</button>
+  </form>
+
+  <input id="searchInput" class="search" placeholder="Search tasks..." />
+
+  <div class="board">
+    <div class="column">
+      <h2>Todo</h2>
+      <div class="dropzone" id="todoZone"></div>
+    </div>
+
+    <div class="column">
+      <h2>Done</h2>
+      <div class="dropzone" id="doneZone"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
